@@ -135,8 +135,13 @@ def start_daily_dsa_job(client: discord.Client) -> None:
     print("[Daily DSA] Scheduler started, daily job set for 08:00 IST.")
 
 
-async def _resolve_channel(client: discord.Client) -> Optional[discord.abc.Messageable]:
-    channel_id_env = os.getenv("DISCORD_CHANNEL_ID_DAILY_DSA")
+async def _resolve_channel(
+    client: discord.Client,
+    id_env_key: str = "DISCORD_CHANNEL_ID_DAILY_DSA",
+    name_env_key: str = "DISCORD_CHANNEL_NAME_DAILY_DSA",
+    default_name: str = "daily-dsa",
+) -> Optional[discord.abc.Messageable]:
+    channel_id_env = os.getenv(id_env_key)
     channel: Optional[discord.abc.Messageable] = None
 
     if channel_id_env:
@@ -145,9 +150,9 @@ async def _resolve_channel(client: discord.Client) -> Optional[discord.abc.Messa
             channel = await client.fetch_channel(channel_id)  # type: ignore
             return channel
         except Exception as e:
-            print(f"[Daily DSA] Failed to fetch channel by id '{channel_id_env}': {e}")
+            print(f"[Daily DSA] Failed to fetch channel by id '{channel_id_env}' (key {id_env_key}): {e}")
 
-    wanted_name = os.getenv("DISCORD_CHANNEL_NAME_DAILY_DSA", "daily-dsa").lower()
+    wanted_name = os.getenv(name_env_key, default_name).lower()
     for guild in client.guilds:
         for ch in getattr(guild, "text_channels", []):
             if getattr(ch, "name", "").lower() == wanted_name:
@@ -156,13 +161,17 @@ async def _resolve_channel(client: discord.Client) -> Optional[discord.abc.Messa
 
 
 async def send_startup_test_message(client: discord.Client) -> None:
-    channel = await _resolve_channel(client)
+    channel = await _resolve_channel(
+        client,
+        id_env_key="DISCORD_CHANNEL_ID_STARTUP",
+        name_env_key="DISCORD_CHANNEL_NAME_STARTUP",
+        default_name="bot-status",
+    )
     if channel is None:
         print("[Daily DSA] Startup test: No channel configured/found.")
         return
 
-    now_ist = datetime.now(tz=_IST).strftime("%Y-%m-%d %H:%M:%S %Z")
-    content = f"✅ Daily DSA Zap: Bot is online. ({now_ist})"
+    content = f"✅ Bot is now online"
     try:
         await channel.send(content)
         print("[Daily DSA] Startup test message sent.")
@@ -197,42 +206,28 @@ def _find_row_for_date_or_next(csv_path: str, date_col: str, target_date: date) 
     return None
 
 
-async def send_preview_daily_dsa_message(client: discord.Client) -> None:
-    """Post a preview of the scheduled Daily DSA message (today or next available)."""
-    csv_path = os.getenv("QUESTIONS_CSV_PATH", "questions.csv")
-    date_col = os.getenv("CSV_DATE_COLUMN", "f1")
-
-    # Allow overriding preview date via env; otherwise use today IST
-    preview_str = os.getenv("PREVIEW_DATE")
-    if preview_str:
-        tgt = _parse_date(preview_str)
-    else:
-        tgt = datetime.now(tz=_IST).date()
-
-    if not tgt:
-        tgt = datetime.now(tz=_IST).date()
-
-    row = _find_row_for_date_or_next(csv_path, date_col, tgt)
-    if not row:
-        print(f"[Daily DSA] Preview: No suitable row found in {csv_path} using column '{date_col}'.")
-        return
-
-    # Try to display the date associated with the row
-    row_date_raw = row.get(date_col) or row.get("Date") or row.get("f1")
-    row_date = _parse_date(str(row_date_raw)) if row_date_raw else None
-    when_txt = row_date.isoformat() if row_date else "(unknown date)"
-
-    content = _format_message(row)
-    preview_header = f"👀 Preview: Daily DSA (scheduled for {when_txt} IST)"
-    message = f"{preview_header}\n\n{content}"
-
-    channel = await _resolve_channel(client)
-    if channel is None:
-        print("[Daily DSA] Preview: No channel configured/found.")
-        return
-
-    try:
-        await channel.send(message)
-        print("[Daily DSA] Preview message sent.")
-    except Exception as e:
-        print(f"[Daily DSA] Preview failed to send: {e}")
+# def _find_row_for_date_or_next(csv_path: str, date_col: str, target_date: date) -> Optional[Dict[str, str]]:
+#     """Find the row for target_date; if not found, return the next upcoming row by date."""
+#     if not os.path.exists(csv_path):
+#         return None
+#     matches = []
+#     upcoming = []
+#     with open(csv_path, newline="", encoding="utf-8") as f:
+#         reader = csv.DictReader(f)
+#         for row in reader:
+#             raw = row.get(date_col) or row.get("f1") or row.get("date") or row.get("Date")
+#             if not raw:
+#                 continue
+#             d = _parse_date(str(raw))
+#             if not d:
+#                 continue
+#             if d == target_date:
+#                 matches.append(row)
+#             elif d > target_date:
+#                 upcoming.append((d, row))
+#     if matches:
+#         return matches[0]
+#     if upcoming:
+#         upcoming.sort(key=lambda t: t[0])
+#         return upcoming[0][1]
+#     return None

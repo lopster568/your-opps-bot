@@ -1,7 +1,7 @@
 import os
 from dotenv import load_dotenv
 import discord
-from dsa_scheduler import start_daily_dsa_job, send_preview_daily_dsa_message
+from dsa_scheduler import start_daily_dsa_job, send_startup_test_message
 
 load_dotenv()
 
@@ -15,8 +15,8 @@ async def on_ready():
     print(f'We have logged in as {client.user}')
     # Start the daily DSA scheduler once the client is ready
     start_daily_dsa_job(client)
-    # Send a preview of the daily DSA message (today or next available)
-    await send_preview_daily_dsa_message(client)
+    # Send a startup test message to the configured startup channel
+    await send_startup_test_message(client)
 
 @client.event
 async def on_message(message):
