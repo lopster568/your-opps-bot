@@ -1,0 +1,75 @@
+Date,Question Title,Question Description,Difficulty,Topic/Category,Status,Discord Message ID,Question ID,url
+12/25/25 09:00 AM,Contains Duplicate,"Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.",Easy,Arrays & Hashing,Pending,,217,https://leetcode.com/problems/contains-duplicate/
+12/26/25 09:00 AM,Valid Anagram,"Given two strings s and t, return true if t is an anagram of s, and false otherwise.",Easy,Arrays & Hashing,Pending,,242,https://leetcode.com/problems/valid-anagram/
+12/27/25 09:00 AM,Two Sum,"Given an array of integers nums and an integer target, return the indices of the two numbers that add up to target.",Easy,Arrays & Hashing,Pending,,1,https://leetcode.com/problems/two-sum/
+12/28/25 09:00 AM,Group Anagrams,"Given an array of strings strs, group the anagrams together. You can return the answer in any order.",Medium,Arrays & Hashing,Pending,,49,https://leetcode.com/problems/group-anagrams/
+12/29/25 09:00 AM,Top K Frequent Elements,"Given an integer array nums and an integer k, return the k most frequent elements.",Medium,Arrays & Hashing,Pending,,347,https://leetcode.com/problems/top-k-frequent-elements/
+12/30/25 09:00 AM,Encode and Decode Strings,Design an algorithm to encode a list of strings to a string and decode the encoded string back to the list of strings.,Medium,Arrays & Hashing,Pending,,271,https://leetcode.com/problems/encode-and-decode-strings/
+12/31/25 09:00 AM,Product of Array Except Self,"Given an integer array nums, return an array answer such that answer[i] is equal to the product of all elements except nums[i].",Medium,Arrays & Hashing,Pending,,238,https://leetcode.com/problems/product-of-array-except-self/
+01/01/26 09:00 AM,Longest Consecutive Sequence,"Given an unsorted array of integers nums, return the length of the longest consecutive sequence.",Medium,Arrays & Hashing,Pending,,128,https://leetcode.com/problems/longest-consecutive-sequence/
+01/02/26 09:00 AM,Valid Palindrome,A phrase is a palindrome if it reads the same forward and backward after converting to lowercase and removing non-alphanumeric characters.,Easy,Two Pointers,Pending,,125,https://leetcode.com/problems/valid-palindrome/
+01/03/26 09:00 AM,Two Sum II - Input Array Is Sorted,"Given a 1-indexed array of integers numbers and an integer target, find two numbers that add up to the target.",Easy,Two Pointers,Pending,,167,https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+01/04/26 09:00 AM,3Sum,"Given an integer array nums, return all the triplets that sum to 0.",Easy,Two Pointers,Pending,,15,https://leetcode.com/problems/3sum/
+01/05/26 09:00 AM,Container With Most Water,"Given an integer array height of length n, find two lines that together with the x-axis form a container.",Medium,Two Pointers,Pending,,11,https://leetcode.com/problems/container-with-most-water/
+01/06/26 09:00 AM,Valid Parentheses,"Given a string s containing parentheses, determine if the input string is valid.",Easy,Stack,Pending,,20,https://leetcode.com/problems/valid-parentheses/
+01/07/26 09:00 AM,Min Stack,"Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.",Easy,Stack,Pending,,155,https://leetcode.com/problems/min-stack/
+01/08/26 09:00 AM,Daily Temperatures,"Given an array of temperatures, return an array answer where each element is the number of days you have to wait until a warmer temperature.",Medium,Stack,Pending,,739,https://leetcode.com/problems/daily-temperatures/
+01/09/26 09:00 AM,Car Fleet,"At a car meeting with n cars, return the number of car fleets that will arrive at the destination.",Medium,Stack,Pending,,853,https://leetcode.com/problems/car-fleet/
+01/10/26 09:00 AM,Same Tree,"Given the roots of two binary trees, check if they are the same or not.",Easy,Trees,Pending,,100,https://leetcode.com/problems/same-tree/
+01/11/26 09:00 AM,Invert Binary Tree,"Given the root of a binary tree, invert the tree and return its root.",Easy,Trees,Pending,,226,https://leetcode.com/problems/invert-binary-tree/
+01/12/26 09:00 AM,Symmetric Tree,"Given the root of a binary tree, check if it is a mirror of itself.",Easy,Trees,Pending,,101,https://leetcode.com/problems/symmetric-tree/
+01/13/26 09:00 AM,Maximum Depth of Binary Tree,"Given the root of a binary tree, return its maximum depth.",Easy,Trees,Pending,,104,https://leetcode.com/problems/maximum-depth-of-binary-tree/
+01/14/26 09:00 AM,Binary Tree Level Order Traversal,"Given the root of a binary tree, return the level order traversal of its nodes.",Medium,Trees,Pending,,102,https://leetcode.com/problems/binary-tree-level-order-traversal/
+01/15/26 09:00 AM,Lowest Common Ancestor of a BST,"Given a binary search tree, find the lowest common ancestor of two given nodes.",Easy,Trees,Pending,,235,https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
+01/16/26 09:00 AM,Construct Binary Tree from Preorder and Inorder,"Given preorder and inorder traversals, construct and return the binary tree.",Medium,Trees,Pending,,105,https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+01/17/26 09:00 AM,Serialize and Deserialize Binary Tree,Serialize and deserialize a binary tree.,Hard,Trees,Pending,,297,https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+01/18/26 09:00 AM,Subtree of Another Tree,"Given the roots of two binary trees root and subRoot, return true if there is a subtree.",Medium,Trees,Pending,,572,https://leetcode.com/problems/subtree-of-another-tree/
+01/19/26 09:00 AM,Validate Binary Search Tree,"Given the root of a binary tree, determine if it is a valid binary search tree.",Easy,Trees,Pending,,98,https://leetcode.com/problems/validate-binary-search-tree/
+01/20/26 09:00 AM,Kth Smallest Element in a BST,"Given the root of a binary search tree and an integer k, return the kth smallest value.",Medium,Graphs,Pending,,230,https://leetcode.com/problems/kth-smallest-element-in-a-bst/
+01/21/26 09:00 AM,Number of Islands,"Given an m x n 2D binary grid, return the number of islands.",Medium,Graphs,Pending,,200,https://leetcode.com/problems/number-of-islands/
+01/22/26 09:00 AM,Surrounded Regions,"Given an m x n matrix board containing Os and Xs, capture all regions surrounded by X.",Medium,Graphs,Pending,,130,https://leetcode.com/problems/surrounded-regions/
+01/23/26 09:00 AM,Clone Graph,"Given a reference of a node in a connected undirected graph, return a deep copy.",Medium,Graphs,Pending,,133,https://leetcode.com/problems/clone-graph/
+01/24/26 09:00 AM,Graph Valid Tree,"Given n nodes and a list of undirected edges, check if the edges form a valid tree.",Medium,Graphs,Pending,,261,https://leetcode.com/problems/graph-valid-tree/
+01/25/26 09:00 AM,Course Schedule,Determine if you can finish all courses given prerequisites.,Medium,1-D DP,Pending,,207,https://leetcode.com/problems/course-schedule/
+01/26/26 09:00 AM,Course Schedule II,Return an order of courses you should take given the prerequisites.,Medium,1-D DP,Pending,,210,https://leetcode.com/problems/course-schedule-ii/
+01/27/26 09:00 AM,Longest Increasing Subsequence,"Given an integer array nums, return the length of the longest strictly increasing subsequence.",Medium,1-D DP,Pending,,300,https://leetcode.com/problems/longest-increasing-subsequence/
+01/28/26 09:00 AM,Longest Common Subsequence,"Given two strings text1 and text2, return the length of their longest common subsequence.",Medium,1-D DP,Pending,,1143,https://leetcode.com/problems/longest-common-subsequence/
+01/29/26 09:00 AM,Coin Change,"Given coins of different denominations, find the minimum coins needed to make amount.",Medium,1-D DP,Pending,,322,https://leetcode.com/problems/coin-change/
+01/30/26 09:00 AM,Coin Change 2,"Given coins, return the number of combinations that make up the amount.",Medium,1-D DP,Pending,,518,https://leetcode.com/problems/coin-change-2/
+01/31/26 09:00 AM,Best Time to Buy and Sell Stock with Cooldown,"Given prices array, return the maximum profit with cooldown between transactions.",Medium,1-D DP,Pending,,309,https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/
+02/01/26 09:00 AM,Partition Equal Subset Sum,"Given an integer array nums, partition it into two subsets with equal sum.",Medium,Intervals,Pending,,416,https://leetcode.com/problems/partition-equal-subset-sum/
+02/02/26 09:00 AM,Target Sum,"Given an integer array nums and a target, return the number of ways to add +/- signs.",Easy,Intervals,Pending,,494,https://leetcode.com/problems/target-sum/
+02/03/26 09:00 AM,Unique Paths,"Given an m x n grid, return the number of unique paths from top-left to bottom-right.",Medium,Intervals,Pending,,62,https://leetcode.com/problems/unique-paths/
+02/04/26 09:00 AM,Non-overlapping Intervals,"Given an array of intervals, remove minimum intervals to make the rest non-overlapping.",Medium,Intervals,Pending,,435,https://leetcode.com/problems/non-overlapping-intervals/
+02/05/26 09:00 AM,Meeting Rooms,"Given an array of meeting intervals, determine if a person can attend all meetings.",Medium,Intervals,Pending,,252,https://leetcode.com/problems/meeting-rooms/
+02/06/26 09:00 AM,Merge Intervals,"Given an array of intervals, merge all overlapping intervals and return an array.",Medium,Intervals,Pending,,56,https://leetcode.com/problems/merge-intervals/
+02/07/26 09:00 AM,Insert Interval,Given an array of non-overlapping intervals and a new interval to insert.,Medium,Linked List,Pending,,57,https://leetcode.com/problems/insert-interval/
+02/08/26 09:00 AM,Reverse Linked List,"Given the head of a singly linked list, reverse the list and return the reversed list.",Easy,Linked List,Pending,,206,https://leetcode.com/problems/reverse-linked-list/
+02/09/26 09:00 AM,Reverse Linked List II,"Given a singly linked list and integers left and right, reverse the nodes between.",Medium,Linked List,Pending,,92,https://leetcode.com/problems/reverse-linked-list-ii/
+02/10/26 09:00 AM,Reverse Nodes in k-Group,"Given a singly linked list, reverse the nodes of the list k at a time.",Hard,Linked List,Pending,,25,https://leetcode.com/problems/reverse-nodes-in-k-group/
+02/11/26 09:00 AM,LRU Cache,Design a least recently used cache with get and put operations.,Medium,Linked List,Pending,,146,https://leetcode.com/problems/lru-cache/
+02/12/26 09:00 AM,Merge k Sorted Lists,Merge k sorted linked lists into one sorted list.,Medium,Linked List,Pending,,23,https://leetcode.com/problems/merge-k-sorted-lists/
+02/13/26 09:00 AM,Remove Nth Node From End of List,"Given a linked list, remove the nth node from the end.",Easy,Linked List,Pending,,19,https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+02/14/26 09:00 AM,Copy List with Random Pointer,Return a deep copy of a linked list with random pointers.,Easy,Linked List,Pending,,138,https://leetcode.com/problems/copy-list-with-random-pointer/
+02/15/26 09:00 AM,Linked List Cycle,"Given a linked list, determine if it has a cycle.",Easy,Linked List,Pending,,141,https://leetcode.com/problems/linked-list-cycle/
+02/16/26 09:00 AM,Add Two Numbers,You are given two non-empty linked lists representing non-negative integers.,Medium,Linked List,Pending,,2,https://leetcode.com/problems/add-two-numbers/
+02/17/26 09:00 AM,Intersection of Two Linked Lists,Return the node at which the two lists intersect.,Medium,Binary Search,Pending,,160,https://leetcode.com/problems/intersection-of-two-linked-lists/
+02/18/26 09:00 AM,Reorder List,"Given a singly linked list, reorder it according to the pattern.",Medium,Binary Search,Pending,,143,https://leetcode.com/problems/reorder-list/
+02/19/26 09:00 AM,Find Minimum in Rotated Sorted Array,Find the minimum element in a rotated sorted array.,Easy,Binary Search,Pending,,153,https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+02/20/26 09:00 AM,Search in Rotated Sorted Array,Search for a target value in a rotated sorted array.,Medium,Binary Search,Pending,,33,https://leetcode.com/problems/search-in-rotated-sorted-array/
+02/21/26 09:00 AM,Search a 2D Matrix,Search for a target value in a 2D matrix.,Easy,Binary Search,Pending,,74,https://leetcode.com/problems/search-a-2d-matrix/
+02/22/26 09:00 AM,Find First and Last Position,Find the starting and ending position of a given target value.,Easy,Binary Search,Pending,,34,https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+02/23/26 09:00 AM,Binary Search,"Given a sorted array, find the index of a target value.",Medium,Sliding Window,Pending,,704,https://leetcode.com/problems/binary-search/
+02/24/26 09:00 AM,First Bad Version,Find the first bad version in a sequence.,Medium,Sliding Window,Pending,,278,https://leetcode.com/problems/first-bad-version/
+02/25/26 09:00 AM,Longest Substring Without Repeating,Find the length of the longest substring without repeating characters.,Easy,Sliding Window,Pending,,3,https://leetcode.com/problems/longest-substring-without-repeating-characters/
+02/26/26 09:00 AM,Minimum Window Substring,Find the minimum window substring that contains all characters from another string.,Medium,Sliding Window,Pending,,76,https://leetcode.com/problems/minimum-window-substring/
+02/27/26 09:00 AM,Permutation in String,"Given two strings, return true if one is a permutation of the other.",Medium,Sliding Window,Pending,,567,https://leetcode.com/problems/permutation-in-string/
+02/28/26 09:00 AM,Find All Anagrams in a String,Find all start indices of anagrams in a string.,Easy,Greedy,Pending,,438,https://leetcode.com/problems/find-all-anagrams-in-a-string/
+03/01/26 09:00 AM,Longest Repeating Character Replacement,Find the longest substring with same character after at most k replacements.,Medium,Greedy,Pending,,424,https://leetcode.com/problems/longest-repeating-character-replacement/
+03/02/26 09:00 AM,Sliding Window Maximum,Return the maximum in each sliding window.,Medium,Greedy,Pending,,239,https://leetcode.com/problems/sliding-window-maximum/
+03/03/26 09:00 AM,Best Time to Buy and Sell Stock,"Given prices, find maximum profit from buying and selling stock once.",Hard,Backtracking,Pending,,121,https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+03/04/26 09:00 AM,Jump Game,Determine if you can reach the last index of the array.,Hard,Backtracking,Pending,,55,https://leetcode.com/problems/jump-game/
+03/05/26 09:00 AM,Jump Game II,Return the minimum number of jumps needed to reach the last index.,Easy,Tries,Pending,,45,https://leetcode.com/problems/jump-game-ii/
+03/06/26 09:00 AM,N-Queens,Solve the N-Queens puzzle and return all distinct solutions.,Hard,Backtracking,Pending,,51,https://leetcode.com/problems/n-queens/
+03/07/26 09:00 AM,Sudoku Solver,Write a program to solve a Sudoku puzzle.,Hard,Backtracking,Pending,,37,https://leetcode.com/problems/sudoku-solver/
+03/08/26 09:00 AM,Implement Trie (Prefix Tree),Design a trie or prefix tree for efficient storage and retrieval of keys.,Easy,Tries,Pending,,208,https://leetcode.com/problems/implement-trie-prefix-tree/
