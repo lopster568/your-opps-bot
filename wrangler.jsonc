@@ -1,0 +1,26 @@
+{
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "name": "your-opps-bot",
+    "main": "worker.py",
+    "compatibility_date": "2025-11-02",
+    "compatibility_flags": [
+        "python_workers"
+    ],
+    "triggers": {
+        "crons": [
+            "30 2 * * *"
+        ]
+    },
+    "vars": {
+        "CSV_DATE_COLUMN": "Date",
+        "CSV_CATEGORY_COLUMN": "Topic/Category",
+        "CSV_PROBLEM_COLUMN": "Question Title",
+        "CSV_DIFFICULTY_COLUMN": "Difficulty",
+        "CSV_DESCRIPTION_COLUMN": "Question Description",
+        "CSV_URL_COLUMN": "url",
+        "DAILY_DSA_PREFIX_TEXT": "Ready to sharpen your problem-solving skills? Rise and grind!"
+    },
+    "observability": {
+        "enabled": true
+    }
+}
