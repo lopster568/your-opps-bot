@@ -1,0 +1,73 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# ---- Packaging / build ----
+build/
+dist/
+.eggs/
+*.egg-info/
+*.egg
+sdist/
+var/
+lib/
+lib64/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+ENV/
+env/
+.conda/
+
+# pyenv / Python version files
+.python-version
+
+# ---- Dependencies / installers ----
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ---- Test / coverage / tooling ----
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.hypothesis/
+.mypy_cache/
+.pyre/
+.pytype/
+.cache/
+
+# ---- Logs ----
+logs/
+log/
+*.log
+
+# ---- IDE / Editor ----
+.vscode/
+.idea/
+*.code-workspace
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+
+# ---- Env files / secrets ----
+.env
+.env.*
+*.local
+
+# ---- Misc ----
+*.swp
+*.swo
+.tmp/
+tmp/
